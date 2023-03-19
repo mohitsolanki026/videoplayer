@@ -1,0 +1,9 @@
+.container{
+    width: 100%;
+   margin: 10px;
+   overflow: hidden;
+}
+.top{
+    display: flex;
+    padding: 10px;
+}
