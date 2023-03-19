@@ -102,17 +102,23 @@ function ImageEditor() {
   return (
     <div className="container">
       <div className="top">
-      <h4>Draw on Image</h4>
-      <input type="color" onChange={(e)=>setcolor(e.target.value)} />
-      <input type="number" onChange={(e)=>setbordersize(e.target.value)} placeholder="width of border" />
+      <h1 >Draw on Image</h1>
+      <div className="inputt">
+        <input  type="color" onChange={(e)=>setcolor(e.target.value)} />
+      <input type="number" className="draw-input" onChange={(e)=>setbordersize(e.target.value)} placeholder="width of border" />
       </div>
-      <canvas 
+      <button onClick={saveImage} className='btn'>Save Image</button>
+      </div>
+      <div className="img-con">
+
+      <canvas  
         ref={canvasRef}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
       />
-      <button onClick={saveImage}>Save Image</button>
+     
+      </div>
     </div>
   )}
   export default ImageEditor

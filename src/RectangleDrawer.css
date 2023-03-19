@@ -1,9 +1,21 @@
 .container{
     width: 100%;
    margin: 10px;
-   overflow: hidden;
+
 }
 .top{
     display: flex;
     padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.img-con{
+    overflow: scroll;
+}
+.inputt{
+
+}
+.draw-input{
+    padding: 10px;
+    margin: 0 10px;
 }
