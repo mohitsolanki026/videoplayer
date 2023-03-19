@@ -49,7 +49,7 @@ const VideoPlayer = ({ url }) => {
         <ScreenshotButton onClick={handleScreenshot} className='btn'>
           Take Frame
         </ScreenshotButton>
-        {screenshotUrl && <button onClick={() => navigate(`/draw/${encodeURIComponent(screenshotUrl)}`)} className='btn'>
+        {screenshotUrl && <button onClick={() => navigate(`/videoplayer/draw/${encodeURIComponent(screenshotUrl)}`)} className='btn'>
           Next
         </button> }
         
